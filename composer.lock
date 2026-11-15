@@ -1,0 +1,2382 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "93efe186cb2bcf244b3e12ee9fc9ae1a",
+    "packages": [
+        {
+            "name": "matthiasmullie/minify",
+            "version": "1.3.75",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthiasmullie/minify.git",
+                "reference": "76ba4a5f555fd7bf4aa408af608e991569076671"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/76ba4a5f555fd7bf4aa408af608e991569076671",
+                "reference": "76ba4a5f555fd7bf4aa408af608e991569076671",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "matthiasmullie/path-converter": "~1.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": ">=2.0",
+                "matthiasmullie/scrapbook": ">=1.3",
+                "phpunit/phpunit": ">=4.8"
+            },
+            "suggest": {
+                "psr/cache-implementation": "Cache implementation to use with Minify::cache"
+            },
+            "bin": [
+                "bin/minifycss",
+                "bin/minifyjs"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MatthiasMullie\\Minify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Mullie",
+                    "email": "minify@mullie.eu",
+                    "homepage": "https://www.mullie.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CSS & JavaScript minifier, in PHP. Removes whitespace, strips comments, combines files (incl. @import statements and small assets in CSS files), and optimizes/shortens a few common programming patterns.",
+            "homepage": "https://github.com/matthiasmullie/minify",
+            "keywords": [
+                "JS",
+                "css",
+                "javascript",
+                "minifier",
+                "minify"
+            ],
+            "support": {
+                "issues": "https://github.com/matthiasmullie/minify/issues",
+                "source": "https://github.com/matthiasmullie/minify/tree/1.3.75"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/matthiasmullie",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-06-25T09:56:19+00:00"
+        },
+        {
+            "name": "matthiasmullie/path-converter",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthiasmullie/path-converter.git",
+                "reference": "e7d13b2c7e2f2268e1424aaed02085518afa02d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthiasmullie/path-converter/zipball/e7d13b2c7e2f2268e1424aaed02085518afa02d9",
+                "reference": "e7d13b2c7e2f2268e1424aaed02085518afa02d9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MatthiasMullie\\PathConverter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Mullie",
+                    "email": "pathconverter@mullie.eu",
+                    "homepage": "http://www.mullie.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Relative path converter",
+            "homepage": "http://github.com/matthiasmullie/path-converter",
+            "keywords": [
+                "converter",
+                "path",
+                "paths",
+                "relative"
+            ],
+            "support": {
+                "issues": "https://github.com/matthiasmullie/path-converter/issues",
+                "source": "https://github.com/matthiasmullie/path-converter/tree/1.1.3"
+            },
+            "time": "2019-02-05T23:41:09+00:00"
+        },
+        {
+            "name": "nyholm/psr7",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nyholm/psr7.git",
+                "reference": "a71f2b11690f4b24d099d6b16690a90ae14fc6f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/a71f2b11690f4b24d099d6b16690a90ae14fc6f3",
+                "reference": "a71f2b11690f4b24d099d6b16690a90ae14fc6f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.1 || ^2.0"
+            },
+            "provide": {
+                "php-http/message-factory-implementation": "1.0",
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "http-interop/http-factory-tests": "^0.9",
+                "php-http/message-factory": "^1.0",
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.4",
+                "symfony/error-handler": "^4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "A fast PHP7 implementation of PSR-7",
+            "homepage": "https://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/Nyholm/psr7/issues",
+                "source": "https://github.com/Nyholm/psr7/tree/1.8.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Zegnat",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-09-09T07:06:30+00:00"
+        },
+        {
+            "name": "nyholm/psr7-server",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nyholm/psr7-server.git",
+                "reference": "4335801d851f554ca43fa6e7d2602141538854dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7-server/zipball/4335801d851f554ca43fa6e7d2602141538854dc",
+                "reference": "4335801d851f554ca43fa6e7d2602141538854dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "nyholm/nsa": "^1.1",
+                "nyholm/psr7": "^1.3",
+                "phpunit/phpunit": "^7.0 || ^8.5 || ^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "Helper classes to handle PSR-7 server requests",
+            "homepage": "http://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/Nyholm/psr7-server/issues",
+                "source": "https://github.com/Nyholm/psr7-server/tree/1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Zegnat",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-08T09:30:43+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
+            },
+            "time": "2021-11-05T16:47:00+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "PSR-17: Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory"
+            },
+            "time": "2024-04-15T12:06:14+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
+            },
+            "time": "2023-04-04T09:54:51+00:00"
+        },
+        {
+            "name": "psr/http-server-handler",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-handler.git",
+                "reference": "84c4fb66179be4caaf8e97bd239203245302e7d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/84c4fb66179be4caaf8e97bd239203245302e7d4",
+                "reference": "84c4fb66179be4caaf8e97bd239203245302e7d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side request handler",
+            "keywords": [
+                "handler",
+                "http",
+                "http-interop",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response",
+                "server"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-server-handler/tree/1.0.2"
+            },
+            "time": "2023-04-10T20:06:20+00:00"
+        },
+        {
+            "name": "psr/http-server-middleware",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-middleware.git",
+                "reference": "c1481f747daaa6a0782775cd6a8c26a1bf4a3829"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-middleware/zipball/c1481f747daaa6a0782775cd6a8c26a1bf4a3829",
+                "reference": "c1481f747daaa6a0782775cd6a8c26a1bf4a3829",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0 || ^2.0",
+                "psr/http-server-handler": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side middleware",
+            "keywords": [
+                "http",
+                "http-interop",
+                "middleware",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-server-middleware/issues",
+                "source": "https://github.com/php-fig/http-server-middleware/tree/1.0.2"
+            },
+            "time": "2023-04-11T06:14:47+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
+            },
+            "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
+            },
+            "time": "2021-10-29T13:26:27+00:00"
+        },
+        {
+            "name": "wilycode/cache-file",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/cache-file.git",
+                "reference": "abb30f70225966e2cf6e632453c01e3d66f30b6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/cache-file/zipball/abb30f70225966e2cf6e632453c01e3d66f30b6f",
+                "reference": "abb30f70225966e2cf6e632453c01e3d66f30b6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "psr/simple-cache": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\FileCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Lightweight PSR-16 file cache with atomic writes and TTL support.",
+            "homepage": "https://github.com/wilycode/cache-file",
+            "keywords": [
+                "cache",
+                "file-cache",
+                "filesystem",
+                "php",
+                "psr-16",
+                "simple-cache",
+                "ttl"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/cache-file/issues",
+                "source": "https://github.com/wilycode/cache-file"
+            },
+            "time": "2026-10-12T20:11:06+00:00"
+        },
+        {
+            "name": "wilycode/container",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/container.git",
+                "reference": "5536859b64267077ad0fdbc0aa279b753cfd75a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/container/zipball/5536859b64267077ad0fdbc0aa279b753cfd75a3",
+                "reference": "5536859b64267077ad0fdbc0aa279b753cfd75a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "psr/container": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Lightweight PSR-11 dependency injection container with explicit factories and constructor autowiring.",
+            "homepage": "https://github.com/wilycode/container",
+            "keywords": [
+                "Autowiring",
+                "PSR-11",
+                "container",
+                "dependency-injection",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/container/issues",
+                "source": "https://github.com/wilycode/container"
+            },
+            "time": "2026-10-12T19:47:45+00:00"
+        },
+        {
+            "name": "wilycode/database",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/database.git",
+                "reference": "f625d19402262e728f72dba5cec9ead8c1515e5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/database/zipball/f625d19402262e728f72dba5cec9ead8c1515e5c",
+                "reference": "f625d19402262e728f72dba5cec9ead8c1515e5c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "replace": {
+                "wilycode/database-driver": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Database\\Driver\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Database-agnostic connection, query, and transaction contracts for PHP.",
+            "homepage": "https://github.com/wilycode/database",
+            "keywords": [
+                "database",
+                "database-abstraction",
+                "database-driver",
+                "database-interface",
+                "php",
+                "transactions",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/database/issues",
+                "source": "https://github.com/wilycode/database"
+            },
+            "time": "2026-10-30T11:21:26+00:00"
+        },
+        {
+            "name": "wilycode/database-model",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/database-model.git",
+                "reference": "2bc6c1e6bf48946fab73048f33199fc2088b0d2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/database-model/zipball/2bc6c1e6bf48946fab73048f33199fc2088b0d2f",
+                "reference": "2bc6c1e6bf48946fab73048f33199fc2088b0d2f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Database\\Model\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Attribute-based PHP database models with metadata, JSON hydration, relationships and change tracking.",
+            "homepage": "https://github.com/wilycode/database-model",
+            "keywords": [
+                "Relationships",
+                "attributes",
+                "change-tracking",
+                "database",
+                "hydration",
+                "model",
+                "orm",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/database-model/issues",
+                "source": "https://github.com/wilycode/database-model"
+            },
+            "time": "2026-10-13T00:35:35+00:00"
+        },
+        {
+            "name": "wilycode/database-pdo",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/database-pdo.git",
+                "reference": "23c6d3b77b22913e8077bdba43abc063d0108038"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/database-pdo/zipball/23c6d3b77b22913e8077bdba43abc063d0108038",
+                "reference": "23c6d3b77b22913e8077bdba43abc063d0108038",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": "^8.4",
+                "wilycode/database": "^0.1.2",
+                "wilycode/database-query": "^0.1 || ^0.2"
+            },
+            "replace": {
+                "wilycode/database-driver-pdo": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Database\\DriverPdo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "PDO database driver and canonical query binder for PHP.",
+            "homepage": "https://github.com/wilycode/database-pdo",
+            "keywords": [
+                "database",
+                "database-driver",
+                "pdo",
+                "query-binding",
+                "sql",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/database-pdo/issues",
+                "source": "https://github.com/wilycode/database-pdo"
+            },
+            "time": "2026-10-30T11:29:59+00:00"
+        },
+        {
+            "name": "wilycode/database-query",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/database-query.git",
+                "reference": "ae7b30f09c306e835c93a8bfeadeca6673f33a00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/database-query/zipball/ae7b30f09c306e835c93a8bfeadeca6673f33a00",
+                "reference": "ae7b30f09c306e835c93a8bfeadeca6673f33a00",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Database\\Query\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Lightweight SQL query builder, canonical compiled queries, and driver binding contracts for PHP.",
+            "homepage": "https://github.com/wilycode/database-query",
+            "keywords": [
+                "database",
+                "mysqli",
+                "parameters",
+                "pdo",
+                "prepared-statements",
+                "query-builder",
+                "sql",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/database-query/issues",
+                "source": "https://github.com/wilycode/database-query"
+            },
+            "time": "2026-10-12T22:31:22+00:00"
+        },
+        {
+            "name": "wilycode/database-query-executor",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/database-query-executor.git",
+                "reference": "47ac9459beb5a2be72f35d4d5a3db41b1e529a02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/database-query-executor/zipball/47ac9459beb5a2be72f35d4d5a3db41b1e529a02",
+                "reference": "47ac9459beb5a2be72f35d4d5a3db41b1e529a02",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "wilycode/database": "^0.1",
+                "wilycode/database-query": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Database\\QueryExecutor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Lightweight query execution layer connecting WilyCode SQL queries, binders and database drivers.",
+            "homepage": "https://github.com/wilycode/database-query-executor",
+            "keywords": [
+                "database",
+                "executor",
+                "mysqli",
+                "pdo",
+                "query",
+                "query-builder",
+                "sql",
+                "transaction",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/database-query-executor/issues",
+                "source": "https://github.com/wilycode/database-query-executor"
+            },
+            "time": "2026-10-14T21:21:24+00:00"
+        },
+        {
+            "name": "wilycode/database-repository",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/database-repository.git",
+                "reference": "5a27afd17cad0cb7fdec236efbc38f6fd6b49b4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/database-repository/zipball/5a27afd17cad0cb7fdec236efbc38f6fd6b49b4a",
+                "reference": "5a27afd17cad0cb7fdec236efbc38f6fd6b49b4a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-mbstring": "*",
+                "php": "^8.4",
+                "wilycode/database-model": "^0.1",
+                "wilycode/database-query": "^0.1",
+                "wilycode/database-query-executor": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0",
+                "wilycode/database-pdo": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Database\\Repository\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Model repositories for PHP with eager loading, safe CRUD, relationship persistence and pagination.",
+            "homepage": "https://github.com/wilycode/database-repository",
+            "keywords": [
+                "Relationships",
+                "database",
+                "eager-loading",
+                "models",
+                "orm",
+                "pagination",
+                "php",
+                "query-builder",
+                "repository",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/database-repository/issues",
+                "source": "https://github.com/wilycode/database-repository"
+            },
+            "time": "2026-10-28T19:53:18+00:00"
+        },
+        {
+            "name": "wilycode/dotenv",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/dotenv.git",
+                "reference": "3597cec487b5082d24d4d6c0c9c0052f3a394e90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/dotenv/zipball/3597cec487b5082d24d4d6c0c9c0052f3a394e90",
+                "reference": "3597cec487b5082d24d4d6c0c9c0052f3a394e90",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\DotEnv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Strict, lightweight .env file reader and loader for PHP.",
+            "homepage": "https://github.com/wilycode/dotenv",
+            "keywords": [
+                "configuration",
+                "dotenv",
+                "env",
+                "environment",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/dotenv/issues",
+                "source": "https://github.com/wilycode/dotenv"
+            },
+            "time": "2026-10-12T20:46:21+00:00"
+        },
+        {
+            "name": "wilycode/filter",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/filter.git",
+                "reference": "4f9bf0c5de70dee97bbdc2deab75293ad7ebb1e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/filter/zipball/4f9bf0c5de70dee97bbdc2deab75293ad7ebb1e0",
+                "reference": "4f9bf0c5de70dee97bbdc2deab75293ad7ebb1e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Filter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Small filter contract for reusable value normalization.",
+            "homepage": "https://github.com/wilycode/filter",
+            "keywords": [
+                "filter",
+                "php",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/filter/issues",
+                "source": "https://github.com/wilycode/filter"
+            },
+            "time": "2026-10-25T23:59:34+00:00"
+        },
+        {
+            "name": "wilycode/filters",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/filters.git",
+                "reference": "e4fe4e6021074430ac2c0cf076ca20b9951c89a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/filters/zipball/e4fe4e6021074430ac2c0cf076ca20b9951c89a6",
+                "reference": "e4fe4e6021074430ac2c0cf076ca20b9951c89a6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "ext-mbstring": "*",
+                "php": "^8.4",
+                "wilycode/filter": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Filters\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Ready-to-use filters built on the wilycode/filter contract.",
+            "homepage": "https://github.com/wilycode/filters",
+            "keywords": [
+                "filters",
+                "php",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/filters/issues",
+                "source": "https://github.com/wilycode/filters"
+            },
+            "time": "2026-10-26T19:49:31+00:00"
+        },
+        {
+            "name": "wilycode/form",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/form.git",
+                "reference": "965bad331aee9731ee3dcfcb31199268432adb61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/form/zipball/965bad331aee9731ee3dcfcb31199268432adb61",
+                "reference": "965bad331aee9731ee3dcfcb31199268432adb61",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "psr/http-message": "^1.1 || ^2.0",
+                "wilycode/filter": "^0.1",
+                "wilycode/validator": "^0.1"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.8",
+                "phpunit/phpunit": "^11.0",
+                "wilycode/filters": "^0.1",
+                "wilycode/validators": "^0.1"
+            },
+            "suggest": {
+                "wilycode/filters": "Optional ready-made field filters; not required by form core.",
+                "wilycode/form-image-upload": "Separate, optional image-upload metadata fieldset.",
+                "wilycode/validators": "Optional ready-made field validators; not required by form core."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Form\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Typed form fields, fieldsets and collections using independent filter/validator contracts.",
+            "homepage": "https://github.com/wilycode/form",
+            "keywords": [
+                "form",
+                "php",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/form/issues",
+                "source": "https://github.com/wilycode/form"
+            },
+            "time": "2026-10-31T06:53:09+00:00"
+        },
+        {
+            "name": "wilycode/form-csrf",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/form-csrf.git",
+                "reference": "f2b81e83a97aecff7d505c22f7b0f2906b59e8ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/form-csrf/zipball/f2b81e83a97aecff7d505c22f7b0f2906b59e8ef",
+                "reference": "f2b81e83a97aecff7d505c22f7b0f2906b59e8ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "wilycode/filter": "^0.1",
+                "wilycode/form": "^0.1.1",
+                "wilycode/session": "^0.1",
+                "wilycode/validator": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\FormCsrf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Optional session-backed CSRF token field and validator for WilyCode Form.",
+            "homepage": "https://github.com/wilycode/form-csrf",
+            "keywords": [
+                "csrf",
+                "form",
+                "php",
+                "security",
+                "validation",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/form-csrf/issues",
+                "source": "https://github.com/wilycode/form-csrf"
+            },
+            "time": "2026-10-27T13:17:08+00:00"
+        },
+        {
+            "name": "wilycode/http-response",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/http-response.git",
+                "reference": "657369f3863c5694abdf5cc091dedc5b3744b856"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/http-response/zipball/657369f3863c5694abdf5cc091dedc5b3744b856",
+                "reference": "657369f3863c5694abdf5cc091dedc5b3744b856",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "psr/http-factory": "^1.1",
+                "psr/http-message": "^2.0 || ^1.1"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.8",
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Http\\Response\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Typed PSR-7 response factory for HTML, JSON, redirects and empty responses.",
+            "homepage": "https://github.com/wilycode/http-response",
+            "keywords": [
+                "http",
+                "json",
+                "php",
+                "psr-17",
+                "psr-7",
+                "redirect",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/http-response/issues",
+                "source": "https://github.com/wilycode/http-response"
+            },
+            "time": "2026-10-15T23:59:45+00:00"
+        },
+        {
+            "name": "wilycode/logger-file",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/logger-file.git",
+                "reference": "e4e9a4a995724a46c02e2d881b805fc548c6cfdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/logger-file/zipball/e4e9a4a995724a46c02e2d881b805fc548c6cfdf",
+                "reference": "e4e9a4a995724a46c02e2d881b805fc548c6cfdf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "psr/log": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Logger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Lightweight PSR-3 file logger with channels, level filtering, structured context and atomic appends.",
+            "homepage": "https://github.com/wilycode/logger-file",
+            "keywords": [
+                "file-logger",
+                "log",
+                "logger",
+                "logging",
+                "psr-3",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/logger-file/issues",
+                "source": "https://github.com/wilycode/logger-file"
+            },
+            "time": "2026-10-12T21:26:36+00:00"
+        },
+        {
+            "name": "wilycode/migration",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/migration.git",
+                "reference": "675527d7de9dea815f17cd53395cd1cd05988ed2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/migration/zipball/675527d7de9dea815f17cd53395cd1cd05988ed2",
+                "reference": "675527d7de9dea815f17cd53395cd1cd05988ed2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": "^8.4",
+                "wilycode/database": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0",
+                "wilycode/database-driver-pdo": "^0.1"
+            },
+            "suggest": {
+                "wilycode/database-driver-mysqli": "MySQLi adapter for MySQL or MariaDB",
+                "wilycode/database-driver-pdo": "PDO adapter for database connections"
+            },
+            "bin": [
+                "bin/wilycode-migrate"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Migration\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Small, driver-independent PHP database migration runner with CLI, version tracking, and rollback.",
+            "homepage": "https://github.com/wilycode/migration",
+            "keywords": [
+                "database",
+                "migration",
+                "migrator",
+                "php",
+                "schema",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/migration/issues",
+                "source": "https://github.com/wilycode/migration"
+            },
+            "time": "2026-10-18T23:57:59+00:00"
+        },
+        {
+            "name": "wilycode/router",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/router.git",
+                "reference": "286c45bbf8c62f57fcacb63126f750eb91a88656"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/router/zipball/286c45bbf8c62f57fcacb63126f750eb91a88656",
+                "reference": "286c45bbf8c62f57fcacb63126f750eb91a88656",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "psr/container": "^2.0 || ^1.1",
+                "psr/http-message": "^2.0 || ^1.1",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "suggest": {
+                "wilycode/router-attribute": "Optional PHP attribute-based route declarations (separate integration package).",
+                "wilycode/router-profiler": "Optional router and controller timing diagnostics (separate integration package)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "PSR-7/PSR-15 router with named routes, typed rules, middleware and URL generation.",
+            "homepage": "https://github.com/wilycode/router",
+            "keywords": [
+                "middleware",
+                "php",
+                "psr-15",
+                "psr-7",
+                "router",
+                "routing",
+                "url-generation"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/router/issues",
+                "source": "https://github.com/wilycode/router"
+            },
+            "time": "2026-10-11T23:05:34+00:00"
+        },
+        {
+            "name": "wilycode/router-attribute",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/router-attribute.git",
+                "reference": "77333ea4903c0a2593ea5ae9814742ca8947fa4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/router-attribute/zipball/77333ea4903c0a2593ea5ae9814742ca8947fa4f",
+                "reference": "77333ea4903c0a2593ea5ae9814742ca8947fa4f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "psr/simple-cache": "^3.0",
+                "wilycode/router": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0",
+                "psr/http-message": "^2.0",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\RouterAttribute\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "PHP 8.4 attribute-based route discovery and caching for WilyCode Router.",
+            "homepage": "https://github.com/wilycode/router-attribute",
+            "keywords": [
+                "attributes",
+                "controllers",
+                "php",
+                "psr-15",
+                "psr-16",
+                "psr-7",
+                "router",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/router-attribute/issues",
+                "source": "https://github.com/wilycode/router-attribute"
+            },
+            "time": "2026-10-11T23:43:03+00:00"
+        },
+        {
+            "name": "wilycode/session",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/session.git",
+                "reference": "a68f1bac809c288027b9d5325a621ddcdfbfcba1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/session/zipball/a68f1bac809c288027b9d5325a621ddcdfbfcba1",
+                "reference": "a68f1bac809c288027b9d5325a621ddcdfbfcba1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Session\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Storage-agnostic session contract with namespace-scoped key/value access for PHP.",
+            "homepage": "https://github.com/wilycode/session",
+            "keywords": [
+                "namespaced session",
+                "php",
+                "session",
+                "session contract",
+                "session interface",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/session/issues",
+                "source": "https://github.com/wilycode/session"
+            },
+            "time": "2026-10-12T20:57:00+00:00"
+        },
+        {
+            "name": "wilycode/session-php",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/session-php.git",
+                "reference": "8ce2e29c40cfc3b840384fd4370b38f835f66bb7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/session-php/zipball/8ce2e29c40cfc3b840384fd4370b38f835f66bb7",
+                "reference": "8ce2e29c40cfc3b840384fd4370b38f835f66bb7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-session": "*",
+                "php": "^8.4",
+                "wilycode/session": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Session\\Php\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Native PHP session adapter with namespaced storage for wilycode/session.",
+            "homepage": "https://github.com/wilycode/session-php",
+            "keywords": [
+                "namespaced session",
+                "native php session",
+                "php",
+                "session",
+                "session adapter",
+                "session interface",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/session-php/issues",
+                "source": "https://github.com/wilycode/session-php"
+            },
+            "time": "2026-10-12T21:12:35+00:00"
+        },
+        {
+            "name": "wilycode/template",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/template.git",
+                "reference": "587ff9de17a823f5e2d6f03d5de604569ce86920"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/template/zipball/587ff9de17a823f5e2d6f03d5de604569ce86920",
+                "reference": "587ff9de17a823f5e2d6f03d5de604569ce86920",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Compiled PHP template engine with layouts, sections, components and extensions.",
+            "homepage": "https://github.com/wilycode/template",
+            "keywords": [
+                "components",
+                "layouts",
+                "php",
+                "template-engine",
+                "templates",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/template/issues",
+                "source": "https://github.com/wilycode/template"
+            },
+            "time": "2026-10-15T22:31:02+00:00"
+        },
+        {
+            "name": "wilycode/template-assets",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/template-assets.git",
+                "reference": "548819b100aee7cd0c1ec976e3611b78274acff8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/template-assets/zipball/548819b100aee7cd0c1ec976e3611b78274acff8",
+                "reference": "548819b100aee7cd0c1ec976e3611b78274acff8",
+                "shasum": ""
+            },
+            "require": {
+                "matthiasmullie/minify": "^1.3",
+                "php": "^8.4",
+                "wilycode/template": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Page-scoped CSS and JavaScript asset collection, versioning, bundling, and minification for WilyCode Template.",
+            "homepage": "https://github.com/wilycode/template-assets",
+            "keywords": [
+                "assets",
+                "cache-busting",
+                "css",
+                "javascript",
+                "minification",
+                "php",
+                "template",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/template-assets/issues",
+                "source": "https://github.com/wilycode/template-assets"
+            },
+            "time": "2026-10-15T23:48:37+00:00"
+        },
+        {
+            "name": "wilycode/template-string",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/template-string.git",
+                "reference": "5076c5f29fabab31fe3a3bfa82c8bcd4efc96d68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/template-string/zipball/5076c5f29fabab31fe3a3bfa82c8bcd4efc96d68",
+                "reference": "5076c5f29fabab31fe3a3bfa82c8bcd4efc96d68",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^8.4",
+                "wilycode/template": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "String and formatting filters for the WilyCode Template engine.",
+            "homepage": "https://github.com/wilycode/template-string",
+            "keywords": [
+                "filters",
+                "formatting",
+                "php",
+                "strings",
+                "template",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/template-string/issues",
+                "source": "https://github.com/wilycode/template-string"
+            },
+            "time": "2026-10-15T23:02:42+00:00"
+        },
+        {
+            "name": "wilycode/template-translation",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/template-translation.git",
+                "reference": "2ce292ad832f2243d078b4aea3880e0f9cdf6c5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/template-translation/zipball/2ce292ad832f2243d078b4aea3880e0f9cdf6c5d",
+                "reference": "2ce292ad832f2243d078b4aea3880e0f9cdf6c5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "wilycode/template": "^0.1",
+                "wilycode/translation": "^0.1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0",
+                "wilycode/router": "^0.1 || ^0.2"
+            },
+            "suggest": {
+                "wilycode/router": "Optional route-name fallback for translations outside template rendering."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Translation and locale formatting filters for WilyCode Template, with view-aware translation resources.",
+            "homepage": "https://github.com/wilycode/template-translation",
+            "keywords": [
+                "filters",
+                "localization",
+                "php",
+                "template",
+                "translation",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/template-translation/issues",
+                "source": "https://github.com/wilycode/template-translation"
+            },
+            "time": "2026-10-15T23:26:22+00:00"
+        },
+        {
+            "name": "wilycode/translation",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/translation.git",
+                "reference": "927412efeec347cc63f440292b329258361c3bc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/translation/zipball/927412efeec347cc63f440292b329258361c3bc7",
+                "reference": "927412efeec347cc63f440292b329258361c3bc7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "suggest": {
+                "wilycode/translation-array": "Array-backed message translations.",
+                "wilycode/translation-database": "Database-backed message translations.",
+                "wilycode/translation-languages": "Ready-to-use language rules and locale data for 25 languages."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Translation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Framework-agnostic translation contracts and configurable locale formatting for PHP.",
+            "homepage": "https://github.com/wilycode/translation",
+            "keywords": [
+                "formatter",
+                "i18n",
+                "l10n",
+                "locale",
+                "localization",
+                "php",
+                "pluralization",
+                "translation",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/translation/issues",
+                "source": "https://github.com/wilycode/translation"
+            },
+            "time": "2026-10-13T22:13:00+00:00"
+        },
+        {
+            "name": "wilycode/translation-array",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/translation-array.git",
+                "reference": "de10f209882875fd9a8548d0e4909e888313e29c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/translation-array/zipball/de10f209882875fd9a8548d0e4909e888313e29c",
+                "reference": "de10f209882875fd9a8548d0e4909e888313e29c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "wilycode/translation": "^0.1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0",
+                "wilycode/translation-languages": "^0.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\TranslationArray\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Lazy PHP array translation provider with language fallback, pluralization, and resource mounts.",
+            "keywords": [
+                "array",
+                "fallback",
+                "i18n",
+                "localization",
+                "php",
+                "pluralization",
+                "translation",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/translation-array/issues",
+                "source": "https://github.com/wilycode/translation-array/tree/v0.1.0"
+            },
+            "time": "2026-10-13T22:56:09+00:00"
+        },
+        {
+            "name": "wilycode/translation-languages",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/translation-languages.git",
+                "reference": "9402d75e7b995e1687a2e31b4846825625c6726a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/translation-languages/zipball/9402d75e7b995e1687a2e31b4846825625c6726a",
+                "reference": "9402d75e7b995e1687a2e31b4846825625c6726a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "wilycode/translation": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Translation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Language pluralization rules and configurable locale formatting resources for WilyCode Translation.",
+            "homepage": "https://github.com/wilycode/translation-languages",
+            "keywords": [
+                "formatter",
+                "i18n",
+                "l10n",
+                "language",
+                "locale",
+                "localization",
+                "pluralization",
+                "translation",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/translation-languages/issues",
+                "source": "https://github.com/wilycode/translation-languages"
+            },
+            "time": "2026-10-13T21:53:15+00:00"
+        },
+        {
+            "name": "wilycode/validator",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/validator.git",
+                "reference": "e0322558520f2186a94a2a7d4dd3f2b48456ddfd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/validator/zipball/e0322558520f2186a94a2a7d4dd3f2b48456ddfd",
+                "reference": "e0322558520f2186a94a2a7d4dd3f2b48456ddfd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Framework-independent PHP validation contract with reusable validators and structured, nested errors.",
+            "homepage": "https://github.com/wilycode/validator",
+            "keywords": [
+                "errors",
+                "php",
+                "validation",
+                "validator",
+                "wilycode"
+            ],
+            "support": {
+                "issues": "https://github.com/wilycode/validator/issues",
+                "source": "https://github.com/wilycode/validator"
+            },
+            "time": "2026-10-26T00:11:01+00:00"
+        },
+        {
+            "name": "wilycode/validators",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilycode/validators.git",
+                "reference": "ac5bf0e53a3a190e037f82c5031db99fbc7bbb78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilycode/validators/zipball/ac5bf0e53a3a190e037f82c5031db99fbc7bbb78",
+                "reference": "ac5bf0e53a3a190e037f82c5031db99fbc7bbb78",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "ext-mbstring": "*",
+                "php": "^8.4",
+                "psr/http-message": "^1.1 || ^2.0",
+                "wilycode/validator": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WilyCode\\Validators\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Piter"
+                }
+            ],
+            "description": "Ready-to-use validators built on the wilycode/validator contract.",
+            "support": {
+                "issues": "https://github.com/wilycode/validators/issues",
+                "source": "https://github.com/wilycode/validators/tree/v0.1.1"
+            },
+            "time": "2026-10-27T09:07:19+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "ext-mbstring": "*",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "php": "^8.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.9.0"
+}

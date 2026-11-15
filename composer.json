@@ -1,0 +1,59 @@
+{
+    "name": "wilycode/starter",
+    "description": "A minimal Wily Starter PHP application demonstrating independent WilyCode packages.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "ext-mbstring": "*",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "nyholm/psr7": "^1.8",
+        "nyholm/psr7-server": "^1.1",
+        "php": "^8.4",
+        "wilycode/cache-file": "^0.1",
+        "wilycode/container": "^0.1",
+        "wilycode/database-model": "^0.1",
+        "wilycode/database-pdo": "^0.1",
+        "wilycode/database-query-executor": "^0.1",
+        "wilycode/database-repository": "^0.2",
+        "wilycode/dotenv": "^0.1",
+        "wilycode/filters": "^0.1",
+        "wilycode/form": "^0.1.2",
+        "wilycode/form-csrf": "^0.1",
+        "wilycode/http-response": "^0.1",
+        "wilycode/logger-file": "^0.1",
+        "wilycode/migration": "^0.1",
+        "wilycode/router": "^0.1",
+        "wilycode/router-attribute": "^0.1",
+        "wilycode/session-php": "^0.1",
+        "wilycode/template": "^0.1",
+        "wilycode/template-assets": "^0.1",
+        "wilycode/template-string": "^0.1",
+        "wilycode/template-translation": "^0.1",
+        "wilycode/translation-array": "^0.1",
+        "wilycode/translation-languages": "^0.2",
+        "wilycode/validators": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "php -S 127.0.0.1:8090 -t public",
+        "migrate": "@php bin/migrate.php up",
+        "migrate:make": "@php vendor/bin/wilycode-migrate make --dir=migrations --with-sql",
+        "migrate:status": "@php bin/migrate.php status",
+        "migrate:down": "@php bin/migrate.php down",
+        "test": [
+            "@php tests/run.php",
+            "@php tests/database.php"
+        ],
+        "lint": "@php bin/lint.php"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
